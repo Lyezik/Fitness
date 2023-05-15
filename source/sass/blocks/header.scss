@@ -1,0 +1,29 @@
+.header {
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+}
+
+.header__header {
+  padding-top: 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-link {
+  padding-top: 10px;
+}
+
+.header__logo-image {
+  height: 23px;
+}
+
+.header__phone-link {
+  font-family: 'Alumni Sans';
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
