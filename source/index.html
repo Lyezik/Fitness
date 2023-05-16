@@ -16,7 +16,11 @@
       <header class="header__header">
         <div class="header__container container">
           <a class="header__logo-link" href="index.html">
-            <img class="header__logo-image" src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="122" height="44">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/svg/logo-tablet.svg" alt="Логотип SUPERGYM." width="82"
+                height="17">
+              <img class="header__logo-image" src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="122" height="44">
+            </picture>
           </a>
           <div class="header__phone-wrapper">
             <a class="header__phone-link" href="tel:88005555555">8-800-555-55-55</a>
@@ -32,14 +36,14 @@
               <li>Групповые занятия</li>
               <li>Кардио-зона</li>
             </ul>
-             <a class="intro__button button" href="#">Купить абонемент</a>
+            <a class="intro__button button" href="#">Купить абонемент</a>
           </div>
           <div class="intro__image">
             <picture>
               <!-- <source type="image/webp" media="(max-width: 1199px)"
               srcset="img/intro-tablet.webp 1x, img/intro-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x">
-            <source media="(max-width: 1199px)" srcset="img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x"> -->
+            <source type="image/webp" srcset="img/intro-desktop.webp 1x, img/intro-desktop@2x.webp 2x"> -->
+              <source media="(max-width: 1199px)" srcset="img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x">
               <img src="img/intro-desktop.jpg" alt="Накаченный мужчина в майке супермена." width="500" height="556"
                 srcset="img/intro-desktop@2x.jpg 2x">
             </picture>
@@ -51,14 +55,71 @@
 
 
   <main>
-    <section class="intro">
+    <section>
       <div class="container">
 
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container"></div>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__logo">
+        <a class="footer__logo-link" href="index.html">
+          <img src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="88" height="32">
+        </a>
+      </div>
+      <nav class="footer__nav nav">
+        <h2 class="visually-hidden">Навигация сайта</h2>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Абонементы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Тренеры</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="footer__social social">
+        <h2 class="visually-hidden">Наши соцсети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Реддит</span>
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#icon-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </footer>
   </div>
 
