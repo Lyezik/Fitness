@@ -15,7 +15,6 @@
 
 .footer__container {
   display: flex;
-  gap: 20px;
 
   @include vp-767 {
     flex-direction: column;
@@ -29,8 +28,6 @@
   height: 32px;
   margin: 0;
   padding: 10px 0 5px 0;
-  transition: $trans-600;
-  transition-property: filter;
 
   @include vp-1199 {
     width: 82px;
@@ -44,16 +41,13 @@
     height: 19px;
     padding: 5px 0;
   }
-
-  @include hover-focus {
-    filter: brightness(0.5) sepia(1) saturate(50) hue-rotate(-150deg);
-  }
 }
 
 .footer__nav {
   max-width: 975px;
-  // width: 84%;
-  margin: 0 auto;
+  width: 84%;
+  margin: 0;
+  margin-right: auto;
 
   @include vp-767 {
     width: 100%;
