@@ -51,76 +51,113 @@
         </div>
       </section>
     </div>
-  </div>
 
-
-  <main>
-    <section>
-      <div class="container">
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__logo">
-        <a class="footer__logo-link" href="index.html">
-          <img src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="88" height="32">
-        </a>
-      </div>
-      <nav class="footer__nav nav">
-        <h2 class="visually-hidden">Навигация сайта</h2>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Услуги</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Абонементы</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Акции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Тренеры</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Расписание</a>
-          </li>
-        </ul>
-      </nav>
-
-      <section class="footer__social social">
-        <h2 class="visually-hidden">Наши соцсети</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg width="25" height="25">
-                <use href="img/sprite.svg#icon-vk"></use>
+    <main>
+      <section class="gym">
+        <div class="gym__container container">
+          <div class="gym__description">
+            <h2>Тренажерный зал</h2>
+            <b>Просторный зал площадью 900&nbsp;кв/м</b>
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+              тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+              спортсменов.</p>
+            <span>В&nbsp;зале расположены отдельная зона для Crossfit и кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</span>
+          </div>
+          <div class="gym__wrapper">
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"> -->
+              <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+              <img class="gym__image" src="img/gym-desktop.jpg" width="660" height="401"
+                alt="Просторный светлый тренажерный зал со множеством тренажеров." srcset="img/gym-desktop@2x.jpg 2x">
+            </picture>
+          </div>
+        </div>
+        <div class="gym__video video" data-video-block>
+          <div class="video__cover" data-video-cover>
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x"> -->
+              <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
+              <img class="video__cover-image" src="img/video.jpg" width="364" height="228" alt="Тренажерный зал со множеством тренажеров."
+              srcset="img/video@2x.jpg 2x">
+            </picture>
+            <button class="video__button" data-video-button>
+              <span class="visually-hidden">Запустить видео.</span>
+              <svg class="video__button-svg" width="17" height="17">
+                <use href="img/sprite.svg#icon-triangle"></use>
               </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Одноклассники</span>
-              <svg width="25" height="25">
-                <use href="img/sprite.svg#icon-ok"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Реддит</span>
-              <svg width="25" height="25">
-                <use href="img/sprite.svg#icon-reddit"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+            </button>
+          </div>
+          <div class="video__youtube" id="player" data-video-container data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
+        </div>
       </section>
-    </div>
-  </footer>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <nav class="footer__nav nav">
+          <h2 class="visually-hidden">Навигация сайта.</h2>
+          <ul class="nav__list">
+            <li class="nav__logo">
+              <a class="footer__logo-link" href="index.html">
+                <img src="img/svg/logo.svg" alt="Логотип SUPERGYM." width="88" height="32">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Абонементы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Акции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Тренеры</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="footer__social">
+          <h2 class="visually-hidden">Cоцсети.</h2>
+          <ul class="footer__social-list social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg width="25" height="25">
+                  <use href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Одноклассники.</span>
+                <svg width="25" height="25">
+                  <use href="img/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Реддит.</span>
+                <svg width="25" height="25">
+                  <use href="img/sprite.svg#icon-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
   </div>
 
   <!-- Модалки -->
