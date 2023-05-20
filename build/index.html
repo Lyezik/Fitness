@@ -76,12 +76,27 @@
             </picture>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="container">
-
+        <div class="gym__video video" data-video-block>
+          <div class="video__cover" data-video-cover>
+            <picture>
+              <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/video.webp 1x, img/video@2x.webp 2x"> -->
+              <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
+              <img class="video__cover-image" src="img/video.jpg" width="364" height="228" alt="Тренажерный зал со множеством тренажеров."
+              srcset="img/video@2x.jpg 2x">
+            </picture>
+            <button class="video__button" data-video-button>
+              <span class="visually-hidden">Запустить видео.</span>
+              <svg class="video__button-svg" width="17" height="17">
+                <use href="img/sprite.svg#icon-triangle"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="video__youtube" id="player" data-video-container data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
         </div>
       </section>
+
+
     </main>
 
     <footer class="footer">
