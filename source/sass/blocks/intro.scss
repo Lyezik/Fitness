@@ -149,7 +149,15 @@
     min-height: 63px;
     min-width: 290px;
     transform: translateX(-1px);
-    }
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    opacity: 0.8;
+  }
 }
 
 .intro__image {
@@ -160,6 +168,6 @@
   }
 
   @include vp-767 {
-  display: none;
+    display: none;
   }
 }
