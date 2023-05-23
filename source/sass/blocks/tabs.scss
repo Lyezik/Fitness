@@ -68,6 +68,8 @@
 
   @include hover-focus {
     color: $color-sapphire;
+    opacity: 0.8;
+    outline: none;
   }
 
   &:disabled {

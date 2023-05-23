@@ -135,4 +135,12 @@
     grid-column: auto;
   }
 
+  @include hover-focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
 }

@@ -141,12 +141,11 @@
     }
   }
 
-  &:hover,
-  &:focus,
-  &:focus-within {
+  @include hover-focus {
     &::after {
       background: linear-gradient(135deg, $color-crimson 0, $color-smalt 100%);
     }
+    outline: none;
   }
 }
 
