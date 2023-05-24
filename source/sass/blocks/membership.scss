@@ -73,7 +73,7 @@
   flex-direction: column;
   align-items: center;
   max-width: 347px;
-  padding: 50px 20px 62px 20px;
+  padding: 50px 20px 47px 20px;
   background-color: $color-default-white;
 
   &::after {
@@ -93,14 +93,14 @@
     width: 64.5%;
     place-self: center;
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
   }
 
   @include vp-767 {
     width: 100%;
     max-width: 600px;
     padding-top: 44px;
-    padding-bottom: 49px;
+    padding-bottom: 34px;
   }
 
   h3 {
@@ -110,6 +110,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 40px;
+    text-align: center;
 
     @include vp-1199 {
       margin-bottom: 5px;
@@ -131,6 +132,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-chambray;
+    text-align: center;
 
     @include vp-1199 {
       margin-bottom: 65px;
@@ -145,6 +147,7 @@
     &::after {
       background: linear-gradient(135deg, $color-crimson 0, $color-smalt 100%);
     }
+
     outline: none;
   }
 }
@@ -199,6 +202,9 @@
     position: relative;
     z-index: 2;
     margin-right: 14px;
+    max-width: 273px;
+    word-wrap: break-word;
+    text-align: center;
 
     @include vp-767 {
       margin-right: 10px;
@@ -222,13 +228,16 @@
 .membership__button {
   width: 206px;
   padding: 27px 44px 23px 45px;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   align-items: center;
+  text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   outline: 2px solid #102654;
+  user-select: none;
 
   @include hover-focus {
     color: $color-default-white;

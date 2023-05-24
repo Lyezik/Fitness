@@ -21,6 +21,7 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 
   @include vp-1199 {
     margin-bottom: 18px;
@@ -56,6 +57,7 @@
 .header__phone-wrapper {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     padding-top: 5px;
@@ -73,6 +75,7 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  z-index: 2;
 
   @include vp-1199 {
     font-weight: 700;
