@@ -41,7 +41,7 @@
 
 .promo__list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 48.3% 48.3%;
   grid-auto-flow: dense;
   gap: 40px;
   margin: 0;
@@ -49,6 +49,7 @@
   list-style-type: none;
 
   @include vp-1199 {
+    grid-template-columns: 48% 47.5%;
     gap: 30px;
   }
 
@@ -160,7 +161,7 @@
     padding: 0;
     grid-row: span 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     border: none;
 
     @include vp-1199 {
@@ -214,6 +215,8 @@
     font-weight: 700;
     font-size: 70px;
     line-height: 105%;
+    word-wrap: break-word;
+    max-width: 220px;
   }
 
   p {

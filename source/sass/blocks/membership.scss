@@ -48,7 +48,7 @@
 .membership__card-list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 30.2%);
   column-gap: 54px;
   row-gap: 40px;
   margin: 0;
@@ -98,7 +98,6 @@
 
   @include vp-767 {
     width: 100%;
-    max-width: 600px;
     padding-top: 44px;
     padding-bottom: 34px;
   }

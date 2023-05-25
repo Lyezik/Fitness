@@ -1414,9 +1414,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1366px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 103px;
 }
 @media (max-width: 1199px) {
   .container {
@@ -2183,10 +2183,14 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
+  margin: 0 175px 0 0;
   padding: 0;
-  padding-left: 19%;
   list-style-type: none;
+}
+@media (max-width: 1199px) {
+  .nav__list {
+    margin: 0 31px 0 0;
+  }
 }
 @media (max-width: 767px) {
   .nav__list {
@@ -2198,13 +2202,22 @@ button,
        -moz-column-gap: 30px;
             column-gap: 30px;
     padding: 0;
+    margin: 0;
   }
 }
 
 .nav__logo {
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-right: auto;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 150px;
+  gap: 10px;
 }
 @media (max-width: 767px) {
   .nav__logo {
@@ -2272,6 +2285,9 @@ button,
 @media (max-width: 1199px) {
   .social {
     padding-left: 0;
+    -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
 }
 @media (max-width: 767px) {
@@ -2643,8 +2659,8 @@ button,
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (30.2%)[3];
+  grid-template-columns: repeat(3, 30.2%);
   -webkit-column-gap: 54px;
      -moz-column-gap: 54px;
           column-gap: 54px;
@@ -2710,7 +2726,6 @@ button,
 @media (max-width: 767px) {
   .membership__card {
     width: 100%;
-    max-width: 600px;
     padding-top: 44px;
     padding-bottom: 34px;
   }
@@ -3856,8 +3871,8 @@ button,
 .advantages__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 35.3% 22.7% 35.3%;
-  grid-template-columns: 35.3% 22.7% 35.3%;
+  -ms-grid-columns: 35.4% 22.9% 35.1%;
+  grid-template-columns: 35.4% 22.9% 35.1%;
   grid-auto-rows: auto;
   -webkit-column-gap: 3.2%;
      -moz-column-gap: 3.2%;
@@ -3987,6 +4002,9 @@ button,
 .advantages__item div {
   max-width: 68%;
   word-wrap: break-word;
+  -webkit-transform: translateX(-1px);
+      -ms-transform: translateX(-1px);
+          transform: translateX(-1px);
 }
 @media (max-width: 1199px) {
   .advantages__item div {
@@ -4260,8 +4278,8 @@ button,
 .promo__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 48.3% 48.3%;
+  grid-template-columns: 48.3% 48.3%;
   grid-auto-flow: dense;
   gap: 40px;
   margin: 0;
@@ -4270,6 +4288,8 @@ button,
 }
 @media (max-width: 1199px) {
   .promo__list {
+    -ms-grid-columns: 48% 47.5%;
+    grid-template-columns: 48% 47.5%;
     gap: 30px;
   }
 }
@@ -4412,8 +4432,8 @@ button,
   grid-row: span 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   border: none;
 }
 @media (max-width: 1199px) {
@@ -4484,6 +4504,8 @@ button,
   font-weight: 700;
   font-size: 70px;
   line-height: 105%;
+  word-wrap: break-word;
+  max-width: 220px;
 }
 .promo__description p {
   margin: 0;
@@ -4596,6 +4618,7 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
+  height: auto;
 }
 
 .reviews__item {
@@ -4696,18 +4719,22 @@ button,
   row-gap: 13px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 560px;
+  width: 94%;
   margin: 0 auto;
   padding: 55px 60px 50px 62px;
   background-color: #1c3374;
   color: #ffffff;
-  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
-          box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  -webkit-box-shadow: 0 0 20px rgba(28, 51, 116, 0.2);
+          box-shadow: 0 0 20px rgba(28, 51, 116, 0.2);
+  overflow-y: scroll;
+  height: 241px;
+  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .review {
     width: 93%;
     padding: 54px 62px 50px 65px;
+    height: 242px;
   }
 }
 @media (max-width: 767px) {
@@ -4719,9 +4746,10 @@ button,
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
-    row-gap: 13px;
+    row-gap: 9px;
     width: 100%;
     padding: 40px 25px 27px 25px;
+    height: 335px;
   }
 }
 .review h3 {
@@ -5145,6 +5173,9 @@ button,
 }
 .form input::placeholder {
   color: #ffffff;
+}
+.form input:hover {
+  opacity: 0.8;
 }
 
 .form__button {
