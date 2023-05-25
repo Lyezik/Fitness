@@ -47,7 +47,7 @@
 
 .advantages__list {
   display: grid;
-  grid-template-columns: 35.3% 22.7% 35.3%;
+  grid-template-columns: 35.4% 22.9% 35.1%;
   grid-auto-rows: auto;
   column-gap: 3.2%;
   row-gap: 144px;
@@ -144,6 +144,7 @@
   div {
     max-width: 68%;
     word-wrap: break-word;
+    transform: translateX(-1px);
 
     @include vp-1199 {
       max-width: 73%;
