@@ -16,9 +16,8 @@
   }
 
   h2 {
-    font-family: 'Alumni Sans';
+    font-family: "Alumni Sans", "Arial", sans-serif;
     font-style: normal;
-    font-weight: 600;
     margin: 0;
     letter-spacing: 0.03em;
     margin-bottom: 13px;
@@ -102,12 +101,8 @@
     background-color: transparent;
 
     &::placeholder {
-      color: #ffffff;
+      color: $color-default-white;
     }
-
-    // @include hover-focus {
-
-    // }
   }
 }
 
@@ -119,9 +114,9 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border: 3px solid #ffffff;
+  border: 3px solid $color-default-white;
   background: $color-transparent;
-  color: #ffffff;
+  color: $color-default-white;
 
   @include vp-1199 {
     margin-top: 1px;

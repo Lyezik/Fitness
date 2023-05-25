@@ -76,7 +76,7 @@
 
     .staff-card__hidden-description {
       @include vp-1199 {
-      display: block;
+        display: block;
       }
     }
   }
@@ -111,7 +111,6 @@
   overflow-y: scroll;
   scrollbar-width: none;
 
-  /* stylelint-disable-next-line */
   &::-webkit-scrollbar {
     display: none;
   }

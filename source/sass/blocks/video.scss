@@ -35,13 +35,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(255, 255, 255, 0);
   padding: 0;
   width: 72px;
   height: 72px;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  background: linear-gradient(44.89deg, $color-dark-cerulean 25.38%, $color-venetian-red 74.89%);
 
   @include vp-1199 {
     width: 52px;
@@ -49,8 +48,8 @@
   }
 
   @include hover-focus {
-   opacity: 0.8;
-   outline: none;
+    opacity: 0.8;
+    outline: none;
   }
 
   &::after {
@@ -59,8 +58,6 @@
     top: 50%;
     left: 50%;
     background: linear-gradient(80deg, $color-torch-red 20%, $color-cobalt 90%);
-    /* stylelint-disable-next-line */
-    -webkit-mask: radial-gradient(48px, $color-transparent 98%, $color-default-black);
     mask: radial-gradient(48px, $color-transparent 98%, $color-default-black);
     transform: translate(-50%, -50%);
     width: 100px;
@@ -71,7 +68,6 @@
     @include vp-1199 {
       width: 73px;
       height: 73px;
-      -webkit-mask: radial-gradient(35px, $color-transparent 98%, $color-default-black);
       mask: radial-gradient(35px, $color-transparent 98%, $color-default-black);
     }
   }

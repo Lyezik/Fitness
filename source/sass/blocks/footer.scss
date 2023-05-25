@@ -1,7 +1,7 @@
 .footer {
   padding: 40px 0 35px 0;
-  background-color: #030a1a;
-  color: #ffffff;
+  background-color: $color-black-russian;
+  color: $color-default-white;
 
   @include vp-1199 {
     padding-top: 45px;

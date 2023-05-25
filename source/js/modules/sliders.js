@@ -1,3 +1,4 @@
+/* global Swiper*/
 const staffSliderElement = document.querySelector('.staff__slider');
 
 function addTabindex() {
@@ -80,6 +81,7 @@ const initSliders = () => {
         prevEl: '.reviews__button--prev',
       },
     });
+    reviewsSlider.loop = false;
   }
 
   const notificationSpans = document.querySelectorAll('.swiper-notification');
