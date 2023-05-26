@@ -137,6 +137,7 @@
   @include hover-focus {
     opacity: 0.8;
     outline: none;
+    background: #1e408b;
   }
 
   @include active {

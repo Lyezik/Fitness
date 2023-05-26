@@ -1722,17 +1722,17 @@ button,
 }
 
 .header__logo-link {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 @media (hover: hover) {
   .header__logo-link:hover:not(.focus-visible) {
-    opacity: 0.7;
-    outline: none;
+    opacity: 0.9;
+    outline: #000000 solid 3px;
   }
 }
 .header__logo-link.focus-visible:focus {
-  opacity: 0.7;
-  outline: none;
+  opacity: 0.9;
+  outline: #000000 solid 3px;
 }
 .header__logo-link.focus-visible:active {
   opacity: 0.5;
@@ -1798,13 +1798,13 @@ button,
 }
 @media (hover: hover) {
   .header__phone-link:hover:not(.focus-visible) {
-    opacity: 0.7;
-    outline: none;
+    opacity: 0.9;
+    outline: #000000 solid 3px;
   }
 }
 .header__phone-link.focus-visible:focus {
-  opacity: 0.7;
-  outline: none;
+  opacity: 0.9;
+  outline: #000000 solid 3px;
 }
 .header__phone-link.focus-visible:active {
   opacity: 0.5;
@@ -1841,8 +1841,8 @@ button,
 .intro__description {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.3% 62.2%;
-  grid-template-columns: 33.3% 62.2%;
+  -ms-grid-columns: 33.3% 247px;
+  grid-template-columns: 33.3% 247px;
   -ms-grid-rows: (-webkit-max-content)[3];
   -ms-grid-rows: (max-content)[3];
   grid-template-rows: repeat(3, -webkit-max-content);
@@ -3033,14 +3033,14 @@ button,
 @media (hover: hover) {
   .tabs__control:hover:not(.focus-visible) {
     color: #102654;
-    opacity: 0.8;
-    outline: none;
+    opacity: 0.9;
+    outline: #000000 solid 3px;
   }
 }
 .tabs__control.focus-visible:focus {
   color: #102654;
-  opacity: 0.8;
-  outline: none;
+  opacity: 0.9;
+  outline: #000000 solid 3px;
 }
 .tabs__control:disabled {
   pointer-events: none;
@@ -3953,7 +3953,7 @@ button,
   padding: 0;
   word-wrap: break-word;
   text-align: center;
-  width: 33.4%;
+  width: 108px;
 }
 @media (max-width: 1199px) {
   .advantages__item dl {
@@ -4708,17 +4708,13 @@ button,
     right: 15px;
   }
 }
-@media (hover: hover) {
-  .reviews__button:hover:not(.focus-visible) {
-    color: #1c3374;
-    -webkit-filter: drop-shadow(0 0 3px #1c3374);
-            filter: drop-shadow(0 0 3px #1c3374);
-  }
-}
-.reviews__button.focus-visible:focus {
-  color: #1c3374;
+.reviews__button:hover {
   -webkit-filter: drop-shadow(0 0 3px #1c3374);
           filter: drop-shadow(0 0 3px #1c3374);
+}
+.reviews__button:focus {
+  outline: none;
+  background-color: rgba(185, 186, 186, 0.189);
 }
 
 .review {
@@ -5223,11 +5219,13 @@ button,
   .form__button:hover:not(.focus-visible) {
     opacity: 0.8;
     outline: none;
+    background: #1e408b;
   }
 }
 .form__button.focus-visible:focus {
   opacity: 0.8;
   outline: none;
+  background: #1e408b;
 }
 .form__button.focus-visible:active {
   opacity: 0.5;
