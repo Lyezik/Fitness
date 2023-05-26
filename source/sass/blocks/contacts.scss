@@ -9,7 +9,7 @@
     place-self: start center;
     max-width: none;
     width: 100%;
-    padding: 62px 45px 58px 45px;
+    padding: 62px 45px 56px 45px;
   }
 
   @include vp-767 {
@@ -118,7 +118,7 @@
   p,
   a {
     margin: 0;
-    padding: 5px 0;
+    padding: 4px 0;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -127,6 +127,7 @@
     @include vp-1199 {
       font-size: 18px;
       line-height: 152.34%;
+      padding: 5px 0;
     }
   }
 

@@ -42,6 +42,7 @@
     transform: translateX(-5px);
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 12px;
   }
 }
 
@@ -169,7 +170,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     font-size: 48px;
     line-height: 72px;
 
@@ -237,6 +238,14 @@
   text-transform: uppercase;
   outline: 2px solid $color-default-black;
   user-select: none;
+
+  @include vp-1199 {
+    padding: 26px 44px 24px 45px;
+  }
+
+  @include vp-767 {
+    padding: 25px 44px 24px 44px;
+  }
 
   @include hover-focus {
     color: $color-default-white;
