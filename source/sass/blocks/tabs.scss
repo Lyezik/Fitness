@@ -84,18 +84,18 @@
 }
 
 .tabs__control.is-active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    display: block;
-    width: 99%;
-    height: 2px;
-    background-color: $color-crimson;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  display: block;
+  width: 99%;
+  height: 2px;
+  background-color: $color-crimson;
 
-    @include vp-767 {
-      bottom: -9px;
-      width: calc(100% + 7px);
+  @include vp-767 {
+    bottom: -9px;
+    width: calc(100% + 7px);
   }
 }
 
