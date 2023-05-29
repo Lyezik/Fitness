@@ -30,6 +30,7 @@
 
 .header__logo-link {
   margin-top: 10px;
+  flex-shrink: 0;
 
   @include hover-focus {
     opacity: 0.9;
