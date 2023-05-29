@@ -30,6 +30,7 @@
     padding-top: 13px;
     row-gap: 9px;
     column-gap: 9px;
+    justify-self: center;
   }
 
   @include vp-767 {
@@ -120,6 +121,8 @@
       min-width: 113px;
       grid-column: 1/3;
       transform: translateX(-1px);
+      align-self: flex-start;
+      padding-top: 78px;
     }
   }
 }

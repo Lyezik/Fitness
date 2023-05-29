@@ -10,14 +10,14 @@
   background-color: $color-resolution-blue;
   color: $color-default-white;
   box-shadow: 0 0 20px rgba($color-resolution-blue, 0.2);
-  overflow-y: scroll;
-  height: 241px;
-  overflow: hidden;
+  // overflow-y: scroll;
+  // height: 241px;
+  // overflow: hidden;
 
   @include vp-1199 {
     width: 93%;
     padding: 54px 62px 50px 65px;
-    height: 242px;
+    // height: 242px;
   }
 
   @include vp-767 {
@@ -27,7 +27,7 @@
     row-gap: 9px;
     width: 100%;
     padding: 40px 25px 27px 25px;
-    height: 335px;
+    // height: 335px;
   }
 
   h3 {

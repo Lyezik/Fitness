@@ -1723,6 +1723,8 @@ button,
 
 .header__logo-link {
   margin-top: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media (hover: hover) {
   .header__logo-link:hover:not(.focus-visible) {
@@ -1863,6 +1865,8 @@ button,
     -webkit-column-gap: 9px;
        -moz-column-gap: 9px;
             column-gap: 9px;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 @media (max-width: 767px) {
@@ -1988,6 +1992,8 @@ button,
     -webkit-transform: translateX(-1px);
         -ms-transform: translateX(-1px);
             transform: translateX(-1px);
+    align-self: flex-start;
+    padding-top: 78px;
   }
 }
 
@@ -4636,6 +4642,7 @@ button,
   width: 675px;
   margin: 0 auto;
   padding: 37px;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .reviews__slider {
@@ -4757,15 +4764,11 @@ button,
   color: #ffffff;
   -webkit-box-shadow: 0 0 20px rgba(28, 51, 116, 0.2);
           box-shadow: 0 0 20px rgba(28, 51, 116, 0.2);
-  overflow-y: scroll;
-  height: 241px;
-  overflow: hidden;
 }
 @media (max-width: 1199px) {
   .review {
     width: 93%;
     padding: 54px 62px 50px 65px;
-    height: 242px;
   }
 }
 @media (max-width: 767px) {
@@ -4780,7 +4783,6 @@ button,
     row-gap: 9px;
     width: 100%;
     padding: 40px 25px 27px 25px;
-    height: 335px;
   }
 }
 .review h3 {
