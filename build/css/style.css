@@ -2855,14 +2855,14 @@ button,
 .membership__price span {
   position: relative;
   z-index: 2;
-  margin-right: 14px;
+  margin-right: 7px;
   max-width: 273px;
   word-wrap: break-word;
   text-align: center;
 }
 @media (max-width: 767px) {
   .membership__price span {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }
 .membership__price svg {
@@ -4337,7 +4337,7 @@ button,
   .promo__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 31px;
+    gap: 30px;
   }
 }
 
@@ -4600,7 +4600,7 @@ button,
 @media (max-width: 767px) {
   .reviews {
     padding-top: 36px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
   }
 }
 .reviews h2 {
@@ -4734,7 +4734,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews__button--next {
-    right: 15px;
+    right: 13px;
   }
 }
 .reviews__button:hover {
@@ -4780,7 +4780,7 @@ button,
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
-    row-gap: 9px;
+    row-gap: 15px;
     width: 100%;
     padding: 40px 25px 27px 25px;
   }
@@ -4794,7 +4794,14 @@ button,
 }
 @media (max-width: 767px) {
   .review h3 {
-    padding-top: 7px;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 6px;
     line-height: 130%;
   }
