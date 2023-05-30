@@ -201,13 +201,13 @@
   span {
     position: relative;
     z-index: 2;
-    margin-right: 14px;
+    margin-right: 7px;
     max-width: 273px;
     word-wrap: break-word;
     text-align: center;
 
     @include vp-767 {
-      margin-right: 10px;
+      margin-right: 5px;
     }
   }
 
